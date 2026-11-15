@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #252525;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo span,
+.section-heading h2 span {
+    color: #06ff2b;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.nav-button,
+.blue-button {
+    display: inline-block;
+    background: #06ff2b;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Главный экран */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    margin: 25px 35px;
+    padding: 55px;
+    min-height: 350px;
+    background: #171717;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 570px;
+}
+
+.small-label {
+    color: #aaa;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.hero-text p {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 390px;
+    margin: 22px 0;
+}
+
+/* Карточки */
+
+.features {
+    padding: 10px 35px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.feature-card {
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 170px;
+}
+
+.feature-card span {
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+    margin: 17px 0 8px;
+}
+
+.feature-card p {
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.blue-card {
+    background: #01f9e0;
+    color: white;
+}
+
+.white-card {
+    background: #e8e8e8;
+    color: #111;
+}
+
+.feature-right {
+    display: grid;
+    gap: 12px;
+}
+
+.feature-right .feature-card {
+    min-height: 0;
+}
+
+.mini-avatars {
+    display: flex;
+    margin-top: 15px;
+}
+
+/* Программа */
+
+.agenda-box {
+    background: #191919;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.agenda-row {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #303030;
+}
+
+.agenda-date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.agenda-date strong,
+.agenda-info h3 {
+    font-size: 13px;
+}
+
+.agenda-date span,
+.agenda-info p {
+    color: #999;
+    font-size: 10px;
+}
+
+.agenda-info p {
+    margin-top: 8px;
+    line-height: 1.7;
+}
+
+.agenda-box .blue-button {
+    margin-top: 25px;
+}
+
+
+/* ПОЧЕМУ СТОИТ ПРИЙТИ */
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.reason-card {
+    background: #191919;
+    padding: 22px;
+    min-height: 145px;
+    border-radius: 10px;
+}
+
+.reason-card span {
+    font-size: 45px;
+    color: #69ffaf;
+    font-weight: 800;
+}
+
+.reason-card h3 {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.reason-card p {
+    color: #999;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* Регистрация */
+
+.countdown {
+    background: #191919;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.countdown div:not(.countdown-symbol) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.countdown span {
+    color: #999;
+    font-size: 8px;
+}
+
+.countdown strong {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.countdown b {
+    color: #777;
+    font-size: 25px;
+}
+
+.ticket-heading {
+    font-size: 12px;
+    margin: 30px 0 15px;
+}
+
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.ticket-card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.ticket-card > span {
+    color: #999;
+    font-size: 9px;
+}
+
+.ticket-card h3 {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.ticket-card > strong {
+    font-size: 27px;
+}
+
+.ticket-card p {
+    color: #999;
+    font-size: 10px;
+    margin: 15px 0;
+    line-height: 1.7;
+}
+
+.ticket-card a {
+    display: block;
+    background: #8aeaff;
+    padding: 11px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.ticket-blue {
+    background: #06b0ff;
+    border-color: #06c1ff;
+}
+
+.ticket-blue a {
+    background: white;
+    color: #06c5ff;
+}
+
+.ticket-blue p,
+.ticket-blue > span {
+    color: #ddd;
+}
+
+
+/* Подвал */
+
+.footer {
+    padding: 35px;
+    border-top: 1px solid #252525;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer p {
+    color: #888;
+    font-size: 9px;
+    margin-top: 8px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #aaa;
+    font-size: 9px;
+}
+
+.copyright {
+    width: 100%;
+    border-top: 1px solid #252525;
+    padding-top: 20px;
+}
